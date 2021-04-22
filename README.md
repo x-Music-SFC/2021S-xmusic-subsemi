@@ -1,11 +1,5 @@
-# gen-study
+# 2021S-xmusic-subsemi
 
-## x-Music sub semi
-
-- 目的
-
-        Max8のGenを習得．
-
-- Member
+- Organizer
     - Ryo Yumoto
     - Santa
