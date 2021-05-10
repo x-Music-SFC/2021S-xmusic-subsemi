@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2904.0, 342.0, 640.0, 480.0 ],
+		"rect" : [ 2904.0, 342.0, 525.0, 440.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,50 +40,16 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "spectroscope~",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 299.0, 75.0, 300.0, 100.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 274.0, 41.0, 44.0, 22.0 ],
-					"text" : "noise~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "spectroscope~",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 235.0, 300.0, 100.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "157278.wav",
-								"filename" : "157278.wav",
+								"absolutepath" : "prim.loop.aif",
+								"filename" : "prim.loop.aif",
 								"filekind" : "audiofile",
-								"id" : "u606003967",
-								"loop" : 1,
+								"id" : "u757001670",
+								"loop" : 0,
 								"content_state" : 								{
-									"loop" : 1
+
 								}
 
 							}
@@ -101,10 +67,21 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 99.0, 68.0, 150.0, 30.0 ],
+					"patching_rect" : [ 57.0, 28.0, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "spectroscope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 139.0, 145.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -114,7 +91,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 418.0, 45.0, 45.0 ]
+					"patching_rect" : [ 64.0, 354.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -127,7 +104,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 99.0, 264.0, 48.0, 136.0 ],
+					"patching_rect" : [ 57.0, 174.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -246,7 +223,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 99.0, 225.0, 36.0, 22.0 ],
+					"patching_rect" : [ 57.0, 135.0, 36.0, 22.0 ],
 					"text" : "gen~"
 				}
 
@@ -259,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 177.0, 189.0, 208.0, 22.0 ]
+					"patching_rect" : [ 135.0, 99.0, 208.0, 22.0 ]
 				}
 
 			}
@@ -283,39 +260,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"order" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -337,10 +282,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "157278.wav",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/examples/mubu-pipo/overview/corpus",
-				"patcherrelativepath" : "../../../Max 8/Packages/MuBu For Max/examples/mubu-pipo/overview/corpus",
-				"type" : "WAVE",
+				"name" : "prim.loop.aif",
+				"bootpath" : "C74:/packages/max-mxj/examples",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
  ],

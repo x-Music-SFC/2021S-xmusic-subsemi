@@ -40,6 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "prim.loop.aif",
+								"filename" : "prim.loop.aif",
+								"filekind" : "audiofile",
+								"id" : "u630001070",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-7",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 95.0, 106.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
@@ -221,47 +257,11 @@
 			}
 , 			{
 				"box" : 				{
-					"basictuning" : 440,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "200422.wav",
-								"filename" : "200422.wav",
-								"filekind" : "audiofile",
-								"id" : "u872010428",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-18",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 95.0, 95.0, 150.0, 30.0 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.0, 408.0, 45.0, 45.0 ]
+					"patching_rect" : [ 95.0, 437.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -419,16 +419,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 0,
-					"source" : [ "obj-18", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -443,10 +434,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "200422.wav",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/examples/mubu-pipo/overview/corpus",
-				"patcherrelativepath" : "../../../Max 8/Packages/MuBu For Max/examples/mubu-pipo/overview/corpus",
-				"type" : "WAVE",
+				"name" : "prim.loop.aif",
+				"bootpath" : "C74:/packages/max-mxj/examples",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
  ],
