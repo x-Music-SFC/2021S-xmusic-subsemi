@@ -108,6 +108,8 @@
 					"patching_rect" : [ 129.0, 255.75, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ -3.788659793814446 ],
+							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
@@ -167,7 +169,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 451.0, 138.75, 44.0, 48.0 ],
+					"patching_rect" : [ 475.0, 62.75, 44.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 138.0, 139.0, 44.0, 48.0 ],
 					"prototypename" : "Q",
@@ -212,7 +214,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 389.0, 215.75, 44.0, 48.0 ],
+					"patching_rect" : [ 401.0, 62.75, 63.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 92.0, 139.0, 44.0, 48.0 ],
 					"prototypename" : "freq",
@@ -453,6 +455,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}

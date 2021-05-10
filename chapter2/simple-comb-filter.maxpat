@@ -91,7 +91,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.0, 354.0, 45.0, 45.0 ]
+					"patching_rect" : [ 57.0, 337.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -107,6 +107,8 @@
 					"patching_rect" : [ 57.0, 174.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
@@ -169,7 +171,7 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"code" : "Delay d(samplerate);\r\nParam delay_time(samplerate, min=1, max=300);\r\n\r\ninput = in1;\r\noutput = input + d.read(delay_time);\r\nd.write(input);\r\n\r\n\r\nout1 = output;",
+									"code" : "Delay d(samplerate);\r\nParam delay_time(100, min=1, max=300);\r\n\r\ninput = in1;\r\noutput = input + d.read(delay_time);\r\nd.write(input);\r\n\r\n\r\nout1 = output;",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -261,6 +263,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
