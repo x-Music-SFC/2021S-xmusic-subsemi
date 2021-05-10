@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 572.0, 1376.0, 640.0, 480.0 ],
+		"rect" : [ 2421.0, 305.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 161.0, 213.0, 300.0, 100.0 ]
+					"patching_rect" : [ 161.0, 218.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -108,6 +108,8 @@
 					"patching_rect" : [ 94.0, 213.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
@@ -140,7 +142,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 1736.0, 1473.0, 600.0, 450.0 ],
+						"rect" : [ 2904.0, 325.0, 600.0, 450.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -170,7 +172,7 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"code" : "History z(0);\r\ninput = in1;\r\n\r\na = input * 0.5;\r\nb = a * 0.5;\r\noutput = a + b;\r\nz = a;\r\n\r\nout1 = output;",
+									"code" : "History z(0);\r\ninput = in1;\r\n\r\na = input * 0.5;\r\nb = z * 0.5;\r\noutput = a + b;\r\nz = output;\r\n\r\nout1 = output;",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -247,7 +249,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 1666.0, 695.0, 600.0, 450.0 ],
+						"rect" : [ 2987.0, 364.0, 296.0, 398.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -430,6 +432,22 @@
 					"destination" : [ "obj-7", 0 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
